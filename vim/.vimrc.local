@@ -1,0 +1,82 @@
+" Theme and colour
+let g:gruvbox_contrast_light = 'soft'
+let g:gruvbox_contrast_dark = 'soft'
+colorscheme gruvbox
+
+" Map leaderr key to Spacebar
+let mapleader="\<Space>"
+
+" Exit insert mode, go to normal mode
+:imap jj <Esc>
+
+" Quick Save
+nnoremap <leader>w :w<cr>
+
+" Set line numbers relative to cursor location
+:set rnu
+
+" Delete from cusor to end of line
+nnoremap D d$
+
+" Change from cursor to end of line
+nnoremap DD c$
+
+" Yank from cursor to end of line
+nnoremap Y y$
+
+" Selet All
+nnoremap vA ggVG
+
+" hyphen to go to end of line
+nnoremap - $
+
+" Press <leader> Enter to remove search highlights
+noremap <silent> <leader><cr> :noh<cr>
+
+" Enable Highlight Search
+ set hlsearch
+" Highlight while search
+set incsearch
+" Case Insensitivity Pattern Matching
+set ignorecase
+" Overrides ignorecase if pattern contains upcase
+set smartcase
+" Keep search results at the center of screen
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
+" Switch between tabs
+nnoremap <Leader>1 1gt
+nnoremap <Leader>2 2gt
+nnoremap <Leader>3 3gt
+nnoremap <Leader>4 4gt
+nnoremap <Leader>5 5gt
+nnoremap <Leader>6 6gt
+nnoremap <Leader>7 7gt
+nnoremap <Leader>8 8gt
+nnoremap <Leader>9 9gt
+
+" Tab navigation like Firefox.
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-t>     <Esc>:tabnew<CR>
+nnoremap <C-x>     :tabclose<CR>
+
+" Find all and replace all, <Space *> type new, hit enter to change all
+nnoremap <Leader>* :%s/\<<c-r><c-w>\>//g<left><left>
+
+" Move blocks of text up orr down Ctrl+j Ctrl+k
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" Togglt tagbarr
+nmap <F8> :TagbarToggle<CR>
+
+au bufnewfile *.sh 0r ~/.vim/sh_header.temp

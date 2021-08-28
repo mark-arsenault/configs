@@ -1,0 +1,16 @@
+code --install-extension Dedsec727.jekyll-run
+code --install-extension eamodio.gitlens
+code --install-extension extr0py.vscode-relative-line-numbers
+code --install-extension ginfuru.ginfuru-vscode-jekyll-syntax
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension redhat.java
+code --install-extension redhat.vscode-yaml
+code --install-extension ritwickdey.LiveServer
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscodevim.vim
